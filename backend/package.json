@@ -13,3 +13,23 @@
     "nodemon": "^2.0.20"
   }
 }
+
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "ISC"
+}
+"scripts": {
+  "start": "next start"
+}
