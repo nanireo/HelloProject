@@ -29,7 +29,7 @@ mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
 app.use('/api/hello', loginRoutes);
 
 // Server creation
-const port = process.env.PORT || 4000;
+const port = process.env.PORT;
 app.listen(port, () => {
   console.log(`Server is running at port ${port}`);
 });

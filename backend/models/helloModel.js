@@ -1,14 +1,11 @@
 const mongoose = require('mongoose');
 
+
+// Schema and model definition as before
 const employeeSchema = new mongoose.Schema({
-  
   Name: String
 });
 
-// Define the model with PascalCase naming convention
-const Helloproject = mongoose.model("Helloproject", employeeSchema);
+const Helloproject = mongoose.model('Helloproject', employeeSchema);
 
 module.exports = Helloproject;
-
-// HelloProjecTwo
-// helloprojects
