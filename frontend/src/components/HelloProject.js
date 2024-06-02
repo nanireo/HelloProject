@@ -22,7 +22,7 @@ function Helloproject() {
         <button onClick={fetchData}>click me</button>
         {data && (
           <div>
-            <h2>My Slef</h2>
+            <h2>My Self</h2>
             <ul>
               {data.map((item) => (
                 <li key={item._id}>
