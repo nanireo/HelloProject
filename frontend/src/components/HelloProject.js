@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-// import './App.css';
 
 function Helloproject() {
   const [data, setData] = useState(null);
 
+  const apiUrl = process.env.REACT_APP_RENDER_SERVER || 'https://helloproject.onrender.com/api/hello';  console.log('apiUrl:', apiUrl);
+
   const fetchData = async () => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_SERVER_URL}/api/hello`);
+      const response = await axios.get(apiUrl);
       setData(response.data);
     } catch (error) {
       console.error("Error fetching data: ", error);
