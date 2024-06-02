@@ -7,7 +7,7 @@ function Helloproject() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://helloproject.onrender.com/api/hello');
+      const response = await axios.get(`${import.meta.env.VITE_SERVER_URL}/api/hello`);
       setData(response.data);
     } catch (error) {
       console.error("Error fetching data: ", error);
@@ -18,7 +18,7 @@ function Helloproject() {
     <div className="App">
       <header className="App-header">
         <h1>Hello Project</h1>
-        <button onClick={fetchData}>Fetch Data</button>
+        <button onClick={fetchData}>click me</button>
         {data && (
           <div>
             <h2>My Slef</h2>
