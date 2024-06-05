@@ -4,7 +4,8 @@ import axios from 'axios';
 function Helloproject() {
   const [data, setData] = useState(null);
 
-  const apiUrl = process.env.REACT_APP_RENDER_SERVER || 'https://helloproject.onrender.com/api/hello';  console.log('apiUrl:', apiUrl);
+  const apiUrl = process.env.REACT_APP_RENDER_SERVER || 'https://helloproject.onrender.com/api/hello';  
+  console.log('apiUrl:', apiUrl);
 
   const fetchData = async () => {
     try {
